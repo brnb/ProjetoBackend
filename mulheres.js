@@ -1,6 +1,6 @@
 const express = require('express'); //iniciando o express
 const router = express.Router();//configurar primeira parte da rota
-const { v4: uuidv4} = require('uuid');
+const {v4: uuidv4} = require('uuid');
 
 const app = express(); //iniciando o app
 app.use(express.json());
@@ -31,7 +31,6 @@ const mulheres = [
 //GET
 function mostraMulheres (request, response) {
     response.json(mulheres);
-    document.write('<br>');
 };
 
 // POST
