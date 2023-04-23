@@ -41,7 +41,6 @@ function criaMulher(request, response) {
         imagem: request.body.imagem,
         minibio: request.body.minibio
     }
-
     mulheres.push(novaMulher)
     response.json(mulheres)
 }
